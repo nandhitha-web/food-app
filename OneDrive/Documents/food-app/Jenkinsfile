@@ -1,8 +1,6 @@
 pipeline {
     agent any
 
-   
-
     environment {
         DOCKER_USERNAME = "nandhitha11"
         IMAGE_NAME = "food-app"
@@ -10,18 +8,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Clone Repository') {
-            steps {
-                checkout scm
-            }
-        }
-
-        stage('Install Dependencies') {
-            steps {
-                bat 'npm install'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
