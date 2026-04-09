@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t %DOCKER_USERNAME%/%IMAGE_NAME%:%IMAGE_TAG% .'
+                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t %DOCKER_USERNAME%/%IMAGE_NAME%:%IMAGE_TAG% OneDrive/Documents/food-app'
             }
         }
 
