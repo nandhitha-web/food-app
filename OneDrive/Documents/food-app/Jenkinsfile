@@ -1,9 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS_18'
-    }
+   
 
     environment {
         DOCKER_USERNAME = "nandhitha11"
